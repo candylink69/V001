@@ -8,20 +8,246 @@
 <style>
 body{
     margin:0;
+    padding-bottom:70px;
     background:#0b0b0b;
     color:#fff;
     font-family:Arial,sans-serif;
     text-align:center;
 }
-.container{max-width:900px;margin:auto;padding:10px}
-.title{font-size:22px;color:#ff2d55;font-weight:bold;margin:10px 0}
-.ad-box{margin:14px 0;display:flex;justify-content:center}
-.video-box{position:relative;width:100%;padding-top:56.25%;background:#000;margin:15px 0}
-.video-box iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
-.btn{display:inline-block;margin:18px 0;padding:14px 26px;background:#ff2d55;
-color:#fff;text-decoration:none;font-size:18px;border-radius:6px;font-weight:bold}
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:10px;
+}
+.title{
+    font-size:22px;
+    color:#ff2d55;
+    margin:10px 0;
+    font-weight:bold;
+}
+.ad-box{
+    margin:14px 0;
+    display:flex;
+    justify-content:center;
+}
+.video-box{
+    position:relative;
+    width:100%;
+    padding-top:56.25%;
+    background:#000;
+    margin:15px 0;
+}
+.video-box iframe{
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    border:none;
+}
 
-/* STICKY */
+/* 🔥 ULTIMATE FLAME CTA WITH SEXY GIRLS */
+.danger-box{
+    margin:20px 0;
+    padding:12px 60px; /* More padding for girls */
+    border-radius:10px;
+    background: linear-gradient(to bottom, #000000, #1a0000, #000000);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    height: 180px; /* Increased height for girls */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+}
+
+/* Sexy Girls on both sides */
+.girl-left, .girl-right {
+    position: absolute;
+    top: 0;
+    height: 180px;
+    width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    animation: girl-bounce 3s infinite ease-in-out;
+}
+
+.girl-left {
+    left: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300"><defs><linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23FFD7C4"/><stop offset="100%" style="stop-color:%23F0B49E"/></linearGradient><linearGradient id="hair" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%239C27B0"/><stop offset="100%" style="stop-color:%237B1FA2"/></linearGradient><linearGradient id="dress" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23FF4081"/><stop offset="100%" style="stop-color:%23F50057"/></linearGradient></defs><path d="M100,60 C120,40 150,50 140,80 C130,110 120,100 100,100 C80,100 70,110 60,80 C50,50 80,40 100,60 Z" fill="url(%23skin)"/><path d="M100,100 C80,120 85,180 100,200 C115,180 120,120 100,100 Z" fill="url(%23skin)"/><path d="M100,200 L80,250 L120,250 Z" fill="url(%23skin)"/><path d="M50,200 L80,250 L70,300 L40,250 Z" fill="url(%23skin)"/><path d="M150,200 L120,250 L130,300 L160,250 Z" fill="url(%23skin)"/><path d="M100,20 C120,0 160,10 160,40 C160,70 140,80 100,80 C60,80 40,70 40,40 C40,10 80,0 100,20 Z" fill="url(%23hair)"/><path d="M100,100 C70,120 60,150 80,180 C100,200 120,180 120,150 C120,120 130,120 100,100 Z" fill="url(%23dress)"/><circle cx="85" cy="70" r="8" fill="%23000"/><circle cx="115" cy="70" r="8" fill="%23000"/><circle cx="85" cy="70" r="3" fill="%23FFF"/><circle cx="115" cy="70" r="3" fill="%23FFF"/><path d="M90,85 Q100,95 110,85" stroke="%23FF4081" stroke-width="3" fill="none"/><path d="M30,150 L70,130" stroke="%23FFD700" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="25" cy="155" r="8" fill="%23FFD700"/></svg>');
+    transform: scaleX(-1); /* Mirror for left side */
+}
+
+.girl-right {
+    right: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300"><defs><linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23FFE0B2"/><stop offset="100%" style="stop-color:%23FFCC80"/></linearGradient><linearGradient id="hair" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23FF9800"/><stop offset="100%" style="stop-color:%23F57C00"/></linearGradient><linearGradient id="dress" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%2300BCD4"/><stop offset="100%" style="stop-color:%23009688"/></linearGradient></defs><path d="M100,60 C120,40 150,50 140,80 C130,110 120,100 100,100 C80,100 70,110 60,80 C50,50 80,40 100,60 Z" fill="url(%23skin)"/><path d="M100,100 C80,120 85,180 100,200 C115,180 120,120 100,100 Z" fill="url(%23skin)"/><path d="M100,200 L80,250 L120,250 Z" fill="url(%23skin)"/><path d="M50,200 L80,250 L70,300 L40,250 Z" fill="url(%23skin)"/><path d="M150,200 L120,250 L130,300 L160,250 Z" fill="url(%23skin)"/><path d="M100,20 C120,0 160,10 160,40 C160,70 140,80 100,80 C60,80 40,70 40,40 C40,10 80,0 100,20 Z" fill="url(%23hair)"/><path d="M100,100 C70,120 60,150 80,180 C100,200 120,180 120,150 C120,120 130,120 100,100 Z" fill="url(%23dress)"/><circle cx="85" cy="70" r="8" fill="%23000"/><circle cx="115" cy="70" r="8" fill="%23000"/><circle cx="85" cy="70" r="3" fill="%23FFF"/><circle cx="115" cy="70" r="3" fill="%23FFF"/><path d="M90,85 Q100,95 110,85" stroke="%2300BCD4" stroke-width="3" fill="none"/><path d="M170,150 L130,130" stroke="%23FFD700" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="175" cy="155" r="8" fill="%23FFD700"/></svg>');
+}
+
+/* Pointing animation for girls */
+@keyframes girl-bounce {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-10px) scale(1.05); }
+}
+
+@keyframes point-finger {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+
+/* Flame background effect */
+.danger-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,0,0,0.3) 0%, rgba(139,0,0,0.2) 30%, rgba(0,0,0,0) 70%);
+    animation: flame-bg 2s infinite alternate;
+    z-index: 0;
+}
+
+.danger-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        transparent 30%, 
+        rgba(255, 69, 0, 0.1) 45%, 
+        transparent 60%);
+    animation: shimmer 3s infinite linear;
+    z-index: 0;
+}
+
+.danger-text{
+    font-size: 24px;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-shadow: 
+        0 0 10px #FF3300,
+        0 0 20px #FF5500,
+        0 0 30px #FF7700,
+        0 0 40px #FF0000,
+        0 0 70px #FF0000;
+    animation: intense-fire 0.8s infinite alternate;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+/* Heart animation between girls */
+.heart-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #FF4081;
+    animation: heartbeat 1.5s infinite;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.danger-btn{
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 28px;
+    background: linear-gradient(to bottom, #FF2200, #CC0000);
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid #FF6600;
+    box-shadow: 
+        0 0 15px #FF3300,
+        0 0 30px #FF0000,
+        inset 0 1px 0 rgba(255,255,255,0.3);
+    position: relative;
+    z-index: 3;
+    transition: all 0.3s ease;
+    animation: btn-pulse 1.5s infinite alternate;
+    min-width: 200px;
+}
+
+.danger-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        0 0 25px #FF3300,
+        0 0 50px #FF0000,
+        inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+/* FLAME ANIMATIONS */
+@keyframes intense-fire {
+    0% {
+        text-shadow: 
+            0 0 5px #FF3300,
+            0 0 15px #FF5500,
+            0 0 25px #FF7700,
+            0 0 35px #FF0000,
+            0 0 60px #FF0000;
+        transform: scale(1);
+    }
+    100% {
+        text-shadow: 
+            0 0 15px #FF6600,
+            0 0 25px #FF8800,
+            0 0 35px #FFAA00,
+            0 0 45px #FF2200,
+            0 0 80px #FF0000;
+        transform: scale(1.03);
+    }
+}
+
+@keyframes flame-bg {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: rotate(180deg) scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes btn-pulse {
+    0% {
+        box-shadow: 
+            0 0 10px #FF3300,
+            0 0 20px #FF0000,
+            inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+    100% {
+        box-shadow: 
+            0 0 20px #FF6600,
+            0 0 40px #FF3300,
+            inset 0 1px 0 rgba(255,255,255,0.5);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.2); }
+}
+
+/* 📌 STICKY BANNER */
 .sticky-ad{
     position:fixed;
     bottom:0;
@@ -31,17 +257,56 @@ color:#fff;text-decoration:none;font-size:18px;border-radius:6px;font-weight:bol
     z-index:9999;
     display:flex;
     justify-content:center;
-    padding:5px 0;
+    padding:6px 0;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .danger-box {
+        height: 150px;
+        min-height: 150px;
+        padding: 10px 50px;
+    }
+    
+    .girl-left, .girl-right {
+        width: 80px;
+        height: 150px;
+    }
+    
+    .danger-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+        min-width: 180px;
+    }
+    
+    .danger-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .danger-box {
+        height: 120px;
+        min-height: 120px;
+        padding: 8px 40px;
+    }
+    
+    .girl-left, .girl-right {
+        width: 60px;
+        height: 120px;
+    }
+    
+    .danger-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+        min-width: 160px;
+    }
+    
+    .danger-text {
+        font-size: 18px;
+    }
 }
 </style>
-
-<script>
-function refreshAd(id, code){
-    setInterval(()=>{
-        document.getElementById(id).innerHTML = code;
-    },75000);
-}
-</script>
 
 </head>
 <body>
@@ -50,23 +315,18 @@ function refreshAd(id, code){
 
 <div class="title">🔥 CandyLink69 – Exclusive Video 🔥</div>
 
-<!-- TOP BANNER (AUTO REFRESH) -->
-<div class="ad-box" id="topAd"></div>
+<!-- TOP BANNER -->
+<div class="ad-box ad-refresh">
 <script>
-var topAdCode = `
-<script>
-atOptions={'key':'d9ef7d014277765156ff0249c45c6c78','format':'iframe','height':50,'width':320,'params':{}};
-<\/script>
-<script src="https://www.highperformanceformat.com/d9ef7d014277765156ff0249c45c6c78/invoke.js"><\/script>`;
-document.getElementById("topAd").innerHTML = topAdCode;
-refreshAd("topAd",topAdCode);
+atOptions={
+ 'key':'d9ef7d014277765156ff0249c45c6c78',
+ 'format':'iframe',
+ 'height':50,
+ 'width':320,
+ 'params':{}
+};
 </script>
-
-<!-- NATIVE -->
-<div class="ad-box">
-<script async data-cfasync="false"
-src="https://pl28336877.effectivegatecpm.com/fcf295088fb555b762fc667e1a742e44/invoke.js"></script>
-<div id="container-fcf295088fb555b762fc667e1a742e44"></div>
+<script src="https://www.highperformanceformat.com/d9ef7d014277765156ff0249c45c6c78/invoke.js"></script>
 </div>
 
 <!-- VIDEO -->
@@ -74,42 +334,70 @@ src="https://pl28336877.effectivegatecpm.com/fcf295088fb555b762fc667e1a742e44/in
 <iframe src="https://candylink69.embed4me.vip/#ksvwo" allowfullscreen></iframe>
 </div>
 
-<!-- SMARTLINK -->
-<a class="btn" href="https://www.effectivegatecpm.com/fs7x3ujib1?key=a83fcd6ac1e5b0be32d9baf753ef4b4d" target="_blank">
-🥵 you want Somthing spicy? 🥵
-</a>
+<!-- 🔥 ULTIMATE FLAME CTA WITH SEXY GIRLS -->
+<div class="danger-box">
+    <!-- Left Girl (Purple hair) -->
+    <div class="girl-left"></div>
+    
+    <!-- Right Girl (Orange hair) -->
+    <div class="girl-right"></div>
+    
+    <!-- Heart between girls -->
+    <div class="heart-pulse">❤️</div>
+    
+    <div class="danger-text">YOU WANT SOMETHING SPICY?</div>
 
-<!-- NATIVE 2 -->
-<div class="ad-box">
+    <a class="danger-btn"
+    href="https://www.effectivegatecpm.com/fs7x3ujib1?key=a83fcd6ac1e5b0be32d9baf753ef4b4d"
+    target="_blank">
+    🥵 CLICK HERE 🥵
+    </a>
+</div>
+
+<!-- NATIVE -->
+<div class="ad-box ad-refresh">
 <script async data-cfasync="false"
 src="https://pl28336877.effectivegatecpm.com/fcf295088fb555b762fc667e1a742e44/invoke.js"></script>
 <div id="container-fcf295088fb555b762fc667e1a742e44"></div>
 </div>
 
-<!-- BOTTOM BANNER (AUTO REFRESH) -->
-<div class="ad-box" id="bottomAd"></div>
+<!-- 300x250 -->
+<div class="ad-box ad-refresh">
 <script>
-var bottomAdCode = `
-<script>
-atOptions={'key':'dbfa6c99e013950fdcbebcbe419d678c','format':'iframe','height':250,'width':300,'params':{}};
-<\/script>
-<script src="https://www.highperformanceformat.com/dbfa6c99e013950fdcbebcbe419d678c/invoke.js"><\/script>`;
-document.getElementById("bottomAd").innerHTML = bottomAdCode;
-refreshAd("bottomAd",bottomAdCode);
+atOptions={
+ 'key':'dbfa6c99e013950fdcbebcbe419d678c',
+ 'format':'iframe',
+ 'height':250,
+ 'width':300,
+ 'params':{}
+};
 </script>
+<script src="https://www.highperformanceformat.com/dbfa6c99e013950fdcbebcbe419d678c/invoke.js"></script>
+</div>
 
 </div>
 
-<!-- STICKY BANNER (AUTO REFRESH) -->
-<div class="sticky-ad" id="stickyAd"></div>
+<!-- 📌 STICKY 320x50 -->
+<div class="sticky-ad ad-refresh">
 <script>
-var stickyCode = `
+atOptions={
+ 'key':'d9ef7d014277765156ff0249c45c6c78',
+ 'format':'iframe',
+ 'height':50,
+ 'width':320,
+ 'params':{}
+};
+</script>
+<script src="https://www.highperformanceformat.com/d9ef7d014277765156ff0249c45c6c78/invoke.js"></script>
+</div>
+
+<!-- 🔁 AUTO REFRESH ADS ONLY -->
 <script>
-atOptions={'key':'d9ef7d014277765156ff0249c45c6c78','format':'iframe','height':50,'width':320,'params':{}};
-<\/script>
-<script src="https://www.highperformanceformat.com/d9ef7d014277765156ff0249c45c6c78/invoke.js"><\/script>`;
-document.getElementById("stickyAd").innerHTML = stickyCode;
-refreshAd("stickyAd",stickyCode);
+setInterval(()=>{
+document.querySelectorAll('.ad-refresh iframe').forEach(i=>{
+ i.src=i.src;
+});
+},60000);
 </script>
 
 </body>
